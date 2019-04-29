@@ -25,7 +25,7 @@ SECRET_KEY = 'r72^qkv9^8l--!i70^p0-eh9w7y9j4o2=++a#%0it-_k*+hocj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -52,6 +52,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'quiz_back.urls'
 
